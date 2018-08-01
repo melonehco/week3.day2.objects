@@ -79,4 +79,64 @@ header{
 
 /* START ADDING STUFF HERE! */
 
+/* from events.js #4 */
+#gridDiv {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 10px;
+}
 
+/* from events.js #5 */
+.hero_container {
+    display: flex;
+}
+
+.hero_container img {
+    background-color: #f7931e;
+    border: 1px solid #00aeff;
+}
+
+/* from events.js #6 */
+.hero_text_container {
+    display: none; /* hidden by default */
+}
+
+/* from events.js #11 */
+.hero_container:not( #highlight ) {
+    cursor: pointer;
+}
+
+/* from events.js #12 */
+#highlight {
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    height: 634px;
+    width: 566px;
+}
+
+/* from events.js #13 */
+#highlight .hero_text_container {
+    display: block;
+    overflow-y: scroll;
+    padding: 16px;
+}
+
+/* from events.js #13 cont */
+#highlight img {
+    align-self: flex-start;
+}
+
+/* for heroes.js #3 */
+.form_container {
+    margin-top: 20px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_container .field {
+    margin: 10px;
+}
